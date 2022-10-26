@@ -1,13 +1,13 @@
 `timescale 1ns / 1ps
 
-module tb_counter();
+module tb_counter_3bit();
 
     reg i_btn ;
     reg i_reset;
 
     wire [2:0] o_led;
 
-    top_counter dut(
+    counter_3bit dut(
         .i_btn(i_btn),
         .i_reset(i_reset),
         .o_led(o_led)
